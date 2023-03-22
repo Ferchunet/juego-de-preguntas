@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUEGOS DE PREGUNTAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1> juegos de preguntas</h1>
+        <p>juegos de programacion</p>
+    </header>
+    <div class="conteiner">
+        <section id="p0">
+            <h3>¿cual lenguaje buscan mas?</h3>
+            <label>
+
+                <input type="radio" value="1" name="p0" onclick="respuesta(0,this)"> python
+            </label>
+            <label>
+
+                <input type="radio" value="2" name="p0" onclick="respuesta(0,this)" > java
+            </label>
+            <label>
+
+                <input type="radio" value="3" name="p0" onclick="respuesta(0,this)" > javascrip
+            </label>
+
+        </section>
+
+        <section id="p1">
+            <h3>¿¿Cuál cree que es la habilidad más importante que debería tener un programador?</h3>
+            <label>
+
+                <input type="radio" value="1" name="p1" onclick="respuesta(1,this)"> Creatividad
+            </label>
+            <label>
+
+                <input type="radio" value="2" name="p1"  onclick="respuesta(1,this)">Resolver el problema
+            </label>
+            <label>
+                <input type="radio" value="3" name="p1"  onclick="respuesta(1,this)"> actitud
+            </label>
+
+        </section>
+
+        <section id="p2">
+            <h3>¿que es un lenguaje de peogramacion?</h3>
+            <label>
+
+                <input type="radio" value="1" name="p2" onclick="respuesta(2,this)" > es una forma de comunicarnos con una computadora, tablet o
+                celular e indicarle qué queremos hacer
+            </label>
+            <label>
+
+                <input type="radio" value="2" name="p2" onclick="respuesta(2,this)"> lenguaje informático especialmente diseñado para describir el
+                conjunto de acciones consecutivas o instrucciones que un equipo informático debe ejecutar
+            </label>
+            <label>
+
+                <input type="radio" value="3" name="p2"onclick="respuesta(2,this)" > todas
+
+        </section>
+        <button onclick="corregir()">CORREGIR</button>
+        <h2>Cantidad acertadas: <span id="resultado"> </span></h2>
+
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
